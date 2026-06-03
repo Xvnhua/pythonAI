@@ -18,3 +18,4 @@ e = '人生苦短我用Python'
 f = None
 
 ## 5. Vector (List.....)
+## 后日谈
