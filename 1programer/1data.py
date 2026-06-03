@@ -16,6 +16,7 @@ e = '人生苦短我用Python'
 
 ## 4. NoneType
 f = None
+print(f)
 
 ## 5. Vector (List.....)
 ## 后日谈
