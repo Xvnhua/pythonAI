@@ -29,4 +29,3 @@ print("0.1 + 10 / 4 ** 2 = ",0.1 + 10 / 4 ** 2)
 print(1 >2 and 1>0)
 print(1 >2 or 1>0)
 print(not 1>2)
-
