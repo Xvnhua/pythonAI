@@ -23,4 +23,9 @@ print(striped_str)
 
 # .repleace() 将指定子串替换为新的子串
 replace_str = The_str.replace('_', '*')
+replace_str = replace_str.replace('待使用', '新的')
+print(replace_str)
 # .startswith() 检查是否以指定子串开头，返回布尔值
+print(replace_str.startswith('*'))
+print(replace_str.startswith('_'))
+
