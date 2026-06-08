@@ -29,3 +29,28 @@ print(replace_str)
 print(replace_str.startswith('*'))
 print(replace_str.startswith('_'))
 
+# 案例1 邮箱格式验证
+def check_mail(Mailstr):
+    if not Mailstr.count('@')==1 or not Mailstr.count('.')>=1:
+        print("邮箱格式错误")
+        return False
+    print('邮箱格式正确')
+    return True
+
+check_mail('')
+check_mail('xiaxia@@qq.com')
+check_mail('xiaxia@qq.com')
+check_mail('xiaxia@qq.bat.com')
+
+# 练习1 判断是否是回文串
+def checkifhui(strr):
+    if len(strr)%2!=0:
+        return False
+    while len(strr)!=0:
+        if strr[0] != strr[-1]:
+            return False
+        strr = strr[1:len(strr)-1]
+    return True
+print(checkifhui('01100'))
+print(checkifhui('101100'))
+print(checkifhui('001100'))
