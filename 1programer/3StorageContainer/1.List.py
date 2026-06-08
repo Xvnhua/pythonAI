@@ -64,7 +64,7 @@ print(a)
 a.reverse()
 print(a)
 
-### 案例 1
+### 案例 1 sum函数、min,max,average
 print("接下来输入10个数字")
 int_list1 = []
 aver = 0
@@ -85,7 +85,7 @@ print(f'平均值avr1:{aver}')
 # len() 求list 元素个数
 # 也可以用min,max获取最大最小值
 
-### 案例2
+### 案例2 in 表达式，解包/组包操作
 # 合并两个列表中的元素，并进行去重处理
 numblist1 = [19,23,54,64,875,20,109,232,123,54]
 numblist2 = [55,80,72,35,60,123,54,29,91]
@@ -107,4 +107,11 @@ print(numblist4)
 ## 加法operator
 numblist5 = numblist1 + numblist2
 
-### 案例3
+### 案例3 列表推导式
+# 提取所有偶数，并计算其平方，组成一个新的列表
+# [f(i) for i in 序列/列表]
+sq = [i for i in range(1,21)]
+sqr = [i**2 for i in sq if i%2==0]
+sql = [i*j for i in range(1,21) for j in range(1,21)]
+print(sqr)
+print(sql)
