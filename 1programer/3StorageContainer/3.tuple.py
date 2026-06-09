@@ -55,9 +55,9 @@ Math_Scores = [s[3] for s in students]
 English_Scores = [s[4] for s in students]
 
 # 直接用解包遍历,直接得到对应的
-for sn,xm,yw,sx,yy in students:
+for sn,xm,*Scores in students:
 
-    yw,sx,yy = int(yw),int(sx),int(yy)
+    yw,sx,yy = [int(i) for i in Scores]
     # max
     ywmax = max(ywmax,yw)
     sxmax = max(sxmax,sx)
